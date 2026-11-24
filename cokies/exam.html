@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cokies.css">
+  <title>Document</title>
+</head>
+<body>
+   <!-- NAVBAR -->
+
+   <header>
+    <div class="container">
+      <nav>
+        <a href="#" class="logo">
+          <span class="logo-cookie">🍪</span>
+          milligrain Cookies
+        </a>
+
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#cookies">Cookies</a>
+          <a href="#story">Our Story</a>
+          <a href="#reviews">Reviews</a>
+        </div>
+
+        <div class="nav-actions">
+          <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">☾</button>
+          <button class="icon-btn" id="cartBtn" aria-label="Open cart">
+            🛒
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+          <button class="icon-btn mobile-menu" onclick="document.querySelector('.nav-links').classList.toggle('show')">
+            ☰
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div>
+          <div class="eyebrow">✨ Freshly baked with love</div>
+
+          <h1>
+            Happiness<br>
+            in every <span>bite.</span>
+          </h1>
+
+          <p>
+            Milligrain brings you better bites, powered by grains and packed with flavor.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#cookies" class="btn btn-primary">
+              Shop Cookies 🍪
+            </a>
+
+            <a href="#story" class="btn btn-outline">
+              Our Story →
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <div class="floating-card">
+            <div class="rating">⭐</div>
+            <div>
+              <strong>4.9/5 Rating</strong>
+              <small>Loved by cookie lovers</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features">
+      <div class="container feature-grid">
+
+        <div class="feature">
+          <div class="feature-icon">🧈</div>
+          <h3>Premium Ingredients</h3>
+          <p>Only quality ingredients.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">🔥</div>
+          <h3>Freshly Baked</h3>
+          <p>Made fresh for every order.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">🚚</div>
+          <h3>Fast Delivery</h3>
+          <p>Freshness at your doorstep.</p>
+        </div>
+
+        <div class="feature">
+          <div class="feature-icon">💝</div>
+          <h3>Made With Love</h3>
+          <p>Every cookie matters.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="cookies">
+      <div class="container">
+
+        <div class="section-head">
+          <div class="section-tag">Our favourites</div>
+          <h2>Cookies worth craving.</h2>
+          <p>
+            From gooey chocolate classics to irresistible pistachio bites,
+            find your new favourite cookie.
+          </p>
+        </div>
+
+        <div class="filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="classic">Classic</button>
+          <button class="filter" data-filter="premium">Premium</button>
+          <button class="filter" data-filter="gift">Gift Boxes</button>
+        </div>
+
+        <div class="products" id="products"></div>
+
+      </div>
+    </section>
+
+    <!-- OFFER -->
+    <section>
+      <div class="container">
+        <div class="offer">
+
+          <div>
+            <div class="section-tag" style="color:#e7a94b;">
+              Sweet deal
+            </div>
+            <h2>Get 15% off your first cookie box.</h2>
+            <p>Because your first bite should be extra special.</p>
+          </div>
+
+          <div class="coupon">
+            Use code: CHARU15
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY -->
+    <section id="story">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-tag">Made differently</div>
+          <h2>Our little cookie story.</h2>
+          <p>
+            Charu Cookies started with a simple idea:
+            make cookies that feel like a warm hug.
+            We bake in small batches so every cookie gets the attention it deserves.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews">
+      <div class="container">
+
+        <div class="section-head">
+          <div class="section-tag">Happy customers</div>
+          <h2>People are obsessed.</h2>
+        </div>
+
+        <div class="reviews">
+
+          <div class="review">
+            <div class="stars">★★★★★</div>
+            <p>
+              “The chocolate chunk cookie is INSANE.
+              Soft in the centre and perfectly crisp around the edges.”
+            </p>
+
+            <div class="review-user">
+              <div class="avatar">👩🏻</div>
+              <div>
+                <strong>Riya</strong>
+                <small>Verified customer</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="review">
+            <div class="stars">★★★★★</div>
+            <p>
+              “Ordered the gift box for my sister and she absolutely loved it.
+              The packaging is beautiful too!”
+            </p>
+
+            <div class="review-user">
+              <div class="avatar">👨🏻</div>
+              <div>
+                <strong>Arjun</strong>
+                <small>Verified customer</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="review">
+            <div class="stars">★★★★★</div>
+            <p>
+              “Pistachio white chocolate is my new favourite.
+              Charu Cookies has officially ruined normal cookies for me.”
+            </p>
+
+            <div class="review-user">
+              <div class="avatar">👩🏽</div>
+              <div>
+                <strong>Ananya</strong>
+                <small>Verified customer</small>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section>
+      <div class="container">
+        <div class="newsletter">
+
+          <div class="section-tag">Stay in the loop</div>
+
+          <h2>More cookies. More happiness.</h2>
+
+          <p>
+            Get new flavour drops, offers and sweet surprises in your inbox.
+          </p>
+
+          <form class="subscribe" id="subscribeForm">
+            <input
+              type="email"
+              placeholder="Your email address"
+              required
+            />
+            <button class="btn btn-primary" type="submit">
+              Subscribe
+            </button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+          <div class="logo">
+            <span class="logo-cookie">🍪</span>
+            Charu Cookies
+          </div>
+
+          <p>
+            Small-batch cookies baked with premium ingredients
+            and a whole lot of love.
+          </p>
+        </div>
+
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#cookies">Shop Cookies</a></li>
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Help</h4>
+          <ul>
+            <li>Shipping</li>
+            <li>Returns</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Follow us</h4>
+          <ul>
+            <li>Instagram</li>
+            <li>Facebook</li>
+            <li>WhatsApp</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="copyright">
+        © 2026 Charu Cookies. Made with ❤️ and lots of chocolate.
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- CART OVERLAY -->
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="cart" id="cart">
+
+    <div class="cart-head">
+      <h2>Your Cart 🛒</h2>
+      <button class="close" id="closeCart">✕</button>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-footer">
+
+      <div class="total-row">
+        <span>Total</span>
+        <span id="cartTotal">₹0</span>
+      </div>
+
+      <button class="btn btn-primary checkout" id="checkoutBtn">
+        Proceed to Checkout →
+      </button>
+
+    </div>
+
+  </aside>
+
+
+  <!-- CHECKOUT MODAL -->
+  <div class="modal" id="checkoutModal">
+
+    <div class="modal-box">
+
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <h2>Almost there! 🍪</h2>
+        <button class="close" id="closeModal">✕</button>
+      </div>
+
+      <p>
+        Enter your details and we'll prepare your cookie order.
+      </p>
+
+      <form id="checkoutForm">
+
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="Full name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="tel"
+            placeholder="Phone number"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="Delivery address"
+            required
+          />
+        </div>
+
+        <button class="btn btn-primary" style="width:100%;">
+          Place Order 🍪
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+  <script>
+    /* ==========================================
+       CHARU COOKIES
+       PRODUCT DATA
+    ========================================== */
+
+    const products = [
+      {
+        id: 1,
+        name: "Classic Choco Chip",
+        category: "classic",
+        price: 149,
+        rating: 5,
+        badge: "BESTSELLER",
+        description: "Buttery cookie loaded with gooey chocolate chips.",
+        image: "Ginzer.png"
+      },
+      {
+        id: 2,
+        name: "Double Chocolate",
+        category: "classic",
+        price: 169,
+        rating: 5,
+        badge: "POPULAR",
+        description: "Rich chocolate cookie with molten chocolate chunks.",
+        image: "Ginzer1.png"
+      },
+      {
+        id: 3,
+        name: "Pistachio Dream",
+        category: "premium",
+        price: 229,
+        rating: 5,
+        badge: "PREMIUM",
+        description: "Creamy white chocolate with crunchy pistachios.",
+        image: "Ginzer2.png"
+      }
+    ];
+
+
+    /* ==========================================
+       STATE
+    ========================================== */
+
+    let cart = JSON.parse(localStorage.getItem("charuCart")) || [];
+    let activeFilter = "all";
+
+
+    /* ==========================================
+       DOM
+    ========================================== */
+
+    const productsContainer = document.getElementById("products");
+    const cartItems = document.getElementById("cartItems");
+    const cartCount = document.getElementById("cartCount");
+    const cartTotal = document.getElementById("cartTotal");
+    const cartPanel = document.getElementById("cart");
+    const overlay = document.getElementById("overlay");
+    const toast = document.getElementById("toast");
+
+
+    /* ==========================================
+       FORMAT PRICE
+    ========================================== */
+
+    function money(value) {
+      return "₹" + value.toLocaleString("en-IN");
+    }
+
+
+    /* ==========================================
+       RENDER PRODUCTS
+    ========================================== */
+
+    function renderProducts() {
+
+      const filtered =
+        activeFilter === "all"
+          ? products
+          : products.filter(product => product.category === activeFilter);
+
+      productsContainer.innerHTML = filtered.map(product => {
+
+        return `
+          <article class="product">
+
+            <div
+              class="product-img"
+              style="background-image:url('${product.image}')"
+            >
+              <span class="badge">${product.badge}</span>
+              <button
+                class="heart"
+                onclick="toggleHeart(this)"
+                aria-label="Favourite"
+              >
+                ♡
+              </button>
+            </div>
+
+            <div class="product-info">
+
+              <div class="stars">
+                ${"★".repeat(product.rating)}
+              </div>
+
+              <h3>${product.name}</h3>
+
+              <p>${product.description}</p>
+
+              <div class="product-bottom">
+
+                <div class="price">
+                  ${money(product.price)}
+                </div>
+
+                <button
+                  class="add-btn"
+                  onclick="addToCart(${product.id})"
+                  aria-label="Add to cart"
+                >
+                  +
+                </button>
+
+              </div>
+
+            </div>
+
+          </article>
+        `;
+
+      }).join("");
+    }
+
+
+    /* ==========================================
+       ADD TO CART
+    ========================================== */
+
+    function addToCart(id) {
+
+      const existing = cart.find(item => item.id === id);
+
+      if (existing) {
+        existing.qty++;
+      } else {
+        cart.push({
+          id,
+          qty: 1
+        });
+      }
+
+      saveCart();
+      renderCart();
+      showToast("🍪 Cookie added to your cart!");
+
+    }
+
+
+    /* ==========================================
+       REMOVE ITEM
+    ========================================== */
+
+    function removeFromCart(id) {
+
+      cart = cart.filter(item => item.id !== id);
+
+      saveCart();
+      renderCart();
+
+    }
+
+
+    /* ==========================================
+       CHANGE QUANTITY
+    ========================================== */
+
+    function changeQty(id, amount) {
+
+      const item = cart.find(item => item.id === id);
+
+      if (!item) return;
+
+      item.qty += amount;
+
+      if (item.qty <= 0) {
+        removeFromCart(id);
+        return;
+      }
+
+      saveCart();
+      renderCart();
+
+    }
+
+
+    /* ==========================================
+       RENDER CART
+    ========================================== */
+
+    function renderCart() {
+
+      if (cart.length === 0) {
+
+        cartItems.innerHTML = `
+          <div class="empty">
+            <div>🍪</div>
+            <h3>Your cart is empty</h3>
+            <p>Add something delicious!</p>
+          </div>
+        `;
+
+      } else {
+
+        cartItems.innerHTML = cart.map(item => {
+
+          const product =
+            products.find(product => product.id === item.id);
+
+          return `
+            <div class="cart-item">
+
+              <div
+                class="cart-item-img"
+                style="background-image:url('${product.image}')"
+              ></div>
+
+              <div class="cart-item-info">
+
+                <h4>${product.name}</h4>
+
+                <small>
+                  ${money(product.price)} each
+                </small>
+
+                <div class="qty">
+
+                  <button onclick="changeQty(${product.id}, -1)">
+                    −
+                  </button>
+
+                  <strong>${item.qty}</strong>
+
+                  <button onclick="changeQty(${product.id}, 1)">
+                    +
+                  </button>
+
+                  <button
+                    class="remove"
+                    onclick="removeFromCart(${product.id})"
+                  >
+                    Remove
+                  </button>
+
+                </div>
+
+              </div>
+
+            </div>
+          `;
+
+        }).join("");
+
+      }
+
+      const totalQuantity =
+        cart.reduce((sum, item) => sum + item.qty, 0);
+
+      const total =
+        cart.reduce((sum, item) => {
+
+          const product =
+            products.find(product => product.id === item.id);
+
+          return sum + product.price * item.qty;
+
+        }, 0);
+
+      cartCount.textContent = totalQuantity;
+      cartTotal.textContent = money(total);
+
+    }
+
+
+    /* ==========================================
+       SAVE CART
+    ========================================== */
+
+    function saveCart() {
+      localStorage.setItem("charuCart", JSON.stringify(cart));
+    }
+
+
+    /* ==========================================
+       OPEN / CLOSE CART
+    ========================================== */
+
+    function openCart() {
+      cartPanel.classList.add("show");
+      overlay.classList.add("show");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeCart() {
+      cartPanel.classList.remove("show");
+      overlay.classList.remove("show");
+      document.body.style.overflow = "";
+    }
+
+    document.getElementById("cartBtn")
+      .addEventListener("click", openCart);
+
+    document.getElementById("closeCart")
+      .addEventListener("click", closeCart);
+
+    overlay.addEventListener("click", closeCart);
+
+
+    /* ==========================================
+       FILTERS
+    ========================================== */
+
+    document.querySelectorAll(".filter").forEach(button => {
+
+      button.addEventListener("click", () => {
+
+        document.querySelectorAll(".filter")
+          .forEach(btn => btn.classList.remove("active"));
+
+        button.classList.add("active");
+
+        activeFilter = button.dataset.filter;
+
+        renderProducts();
+
+      });
+
+    });
+
+
+    /* ==========================================
+       DARK MODE
+    ========================================== */
+
+    const savedTheme =
+      localStorage.getItem("charuTheme");
+
+    if (savedTheme === "dark") {
+      document.body.classList.add("dark");
+    }
+
+    document.getElementById("themeBtn")
+      .addEventListener("click", () => {
+
+        document.body.classList.toggle("dark");
+
+        localStorage.setItem(
+          "charuTheme",
+          document.body.classList.contains("dark")
+            ? "dark"
+            : "light"
+        );
+
+      });
+
+
+    /* ==========================================
+       HEART
+    ========================================== */
+
+    function toggleHeart(button) {
+
+      button.textContent =
+        button.textContent === "♡"
+          ? "♥"
+          : "♡";
+
+      button.style.color =
+        button.textContent === "♥"
+          ? "#e05a50"
+          : "#c06b57";
+
+    }
+
+
+    /* ==========================================
+       TOAST
+    ========================================== */
+
+    let toastTimer;
+
+    function showToast(message) {
+
+      toast.textContent = message;
+      toast.classList.add("show");
+
+      clearTimeout(toastTimer);
+
+      toastTimer = setTimeout(() => {
+        toast.classList.remove("show");
+      }, 2200);
+
+    }
+
+
+    /* ==========================================
+       CHECKOUT
+    ========================================== */
+
+    const checkoutModal =
+      document.getElementById("checkoutModal");
+
+    document.getElementById("checkoutBtn")
+      .addEventListener("click", () => {
+
+        if (cart.length === 0) {
+          showToast("Your cart is empty 🍪");
+          return;
+        }
+
+        checkoutModal.classList.add("show");
+
+      });
+
+
+    document.getElementById("closeModal")
+      .addEventListener("click", () => {
+
+        checkoutModal.classList.remove("show");
+
+      });
+
+
+    document.getElementById("checkoutForm")
+      .addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        cart = [];
+
+        saveCart();
+        renderCart();
+
+        checkoutModal.classList.remove("show");
+        closeCart();
+
+        showToast(
+          "🎉 Order placed! Thank you for choosing Charu Cookies."
+        );
+
+        this.reset();
+
+      });
+
+
+    /* ==========================================
+       NEWSLETTER
+    ========================================== */
+
+    document.getElementById("subscribeForm")
+      .addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        showToast("💌 You're on the list!");
+
+        this.reset();
+
+      });
+
+
+    /* ==========================================
+       INITIALIZE
+    ========================================== */
+
+    renderProducts();
+    renderCart();
+
+  </script>
+
+
+</body>
+</html>
